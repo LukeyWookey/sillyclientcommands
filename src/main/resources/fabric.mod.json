@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "clientcommands",
-  "name": "Client Commands",
+  "name": "Silly Client Commands",
   "description": "Useful client-side commands",
   "version": "${version}",
   "environment": "*",
