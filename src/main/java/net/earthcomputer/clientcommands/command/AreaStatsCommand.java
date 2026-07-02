@@ -36,7 +36,7 @@ public class AreaStatsCommand {
     }
 
     private static int areaStats(FabricClientCommandSource source, BlockPos pos1, BlockPos pos2, ClientBlockPredicate blockPredicate) throws CommandSyntaxException {
-        ClientCommandsServer.requirePrivileges();
+        // ClientCommandsServer.requirePrivileges();
 
         final ClientLevel level = source.getLevel();
         chunkSource = level.getChunkSource();

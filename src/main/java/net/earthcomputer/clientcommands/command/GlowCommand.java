@@ -75,7 +75,7 @@ public class GlowCommand {
     }
 
     private static int glowEntities(FabricClientCommandSource source, CEntitySelector entitySelector, int seconds, int color) throws CommandSyntaxException {
-        ClientCommandsServer.requirePrivileges();
+        // ClientCommandsServer.requirePrivileges();
         boolean keepSearching = getFlag(source, FLAG_KEEP_SEARCHING);
         if (keepSearching) {
             String taskName = TaskManager.addTask("cglow", new SimpleTask() {

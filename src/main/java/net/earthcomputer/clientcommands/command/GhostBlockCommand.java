@@ -43,7 +43,7 @@ public class GhostBlockCommand {
     }
 
     private static int setGhostBlock(FabricClientCommandSource source, BlockPos pos, BlockState state) throws CommandSyntaxException {
-        ClientCommandsServer.requirePrivileges();
+        // ClientCommandsServer.requirePrivileges();
         ClientLevel level = source.getLevel();
         assert level != null;
 
@@ -59,7 +59,7 @@ public class GhostBlockCommand {
     }
 
     private static int fillGhostBlocks(FabricClientCommandSource source, BlockPos from, BlockPos to, BlockState state, Predicate<BlockInWorld> filter) throws CommandSyntaxException {
-        ClientCommandsServer.requirePrivileges();
+        // ClientCommandsServer.requirePrivileges();
         ClientLevel level = source.getLevel();
         assert level != null;
 
