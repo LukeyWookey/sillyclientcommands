@@ -44,7 +44,7 @@ public class GetDataCommand {
     private static final Function<String, AccessorType> CLIENT_ENTITY_DATA_ACCESSOR = argName -> new AccessorType() {
         @Override
         public DataAccessor getAccessor(CommandContext<FabricClientCommandSource> ctx) throws CommandSyntaxException {
-            ClientCommandsServer.requirePrivileges();
+            // ClientCommandsServer.requirePrivileges();
             return new EntityDataAccessor(getEntity(ctx, argName));
         }
 
